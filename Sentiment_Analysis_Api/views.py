@@ -13,8 +13,30 @@ tokenizer = AutoTokenizer.from_pretrained(model_name)
 
 @api_view(['GET', 'POST'])
 def analyze_view(request):
+    """
+        API view method for sentiment analysis.
+
+        This method accepts a POST request with a JSON payload containing the text to analyze.
+        It performs sentiment analysis using the "setfit-ft-sentinent-eval" model from Hugging Face Transformers.
+        The predicted sentiment is returned as a response.
+
+        Args:
+            request (Request): The incoming HTTP request object.
+
+        Returns:
+            Response: A JSON response containing the predicted sentiment.
+
+        Example POST request payload:
+        {
+            "text": "I just watched an amazing movie. The plot was captivating, the acting was outstanding, and the cinematography was breathtaking. I couldn't take my eyes off the screen!"
+        }
+
+        Example response:
+        {
+            "sentiment": "positive"
+        }
+    """
     if request.method == 'POST':
-        
         try:
             # Extract the text from the request payload
             text = request.data.get('text', '')
