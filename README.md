@@ -39,10 +39,14 @@ py -m venv env
 
 
 #### after that run 
-> ```pip install -r requirements.txt```
+```
+pip install -r requirements.txt
+```
 
 #### And run the command: 
-> **python manage.py runserver
+ ```
+python manage.py runserver
+```
 
 
 ## Api Documentation 
