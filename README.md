@@ -43,6 +43,8 @@ py -m venv env
 
 #### after that run 
 ```
+cd Sentiment_Analisis_Api
+
 pip install -r requirements.txt
 ```
 
