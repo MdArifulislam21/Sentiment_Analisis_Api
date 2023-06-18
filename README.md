@@ -11,29 +11,30 @@
 
 #### Step No 2.
 
-> install virtualenv  
+#### install virtualenv  
 > for linux 
- ````python3 -m pip install --user virtualenv```
- ````python3 -m venv env```
- ````source env/bin/activate````
+ ####  python3 -m pip install --user virtualenv
+ ####  python3 -m venv env
+ ####  source env/bin/activate
 
 > for windows 
- ````py -m pip install --user virtualenv```
- ````py -m venv env```
- ````.\env\Scripts\activate````
+ #### py -m pip install --user virtualenv
+ #### py -m venv env
+ #### .\env\Scripts\activate
 
 
 > after that run 
-````pip install -r requirements.txt````
+#### pip install -r requirements.txt
 
-> And run the command: ````python manage.py runserver````
+> And run the command: 
+#### python manage.py runserver
 
 
 ## Api Documentation 
 
 ## Api Url: http://127.0.0.1:8000/analyze/
 
->```
+>
         API view method for sentiment analysis.
 
         This method accepts a POST request with a JSON payload containing the text to analyze.
@@ -55,4 +56,3 @@
         {
             "sentiment": "positive"
         }
-        ```
