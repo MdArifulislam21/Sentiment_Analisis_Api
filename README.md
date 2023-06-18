@@ -8,6 +8,9 @@
 #### **Step No 1.**
 
 #### Clone the hole project from [Sentiment Analisis Api](https://github.com/MdArifulislam21/Sentiment_Analisis_Api.git)
+```
+git clone https://github.com/MdArifulislam21/Sentiment_Analisis_Api.git
+```
 
 #### Step No 2.
 
