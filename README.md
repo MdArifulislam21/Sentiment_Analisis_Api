@@ -12,22 +12,22 @@
 #### Step No 2.
 
 #### install virtualenv  
-> for linux 
- ####  python3 -m pip install --user virtualenv
- ####  python3 -m venv env
- ####  source env/bin/activate
+#### for linux 
+>   python3 -m pip install --user virtualenv
+ >  python3 -m venv env
+ >  source env/bin/activate
 
-> for windows 
- #### py -m pip install --user virtualenv
- #### py -m venv env
- #### .\env\Scripts\activate
+#### for windows 
+ > py -m pip install --user virtualenv
+ > py -m venv env
+ > .\env\Scripts\activate
 
 
-> after that run 
-#### pip install -r requirements.txt
+#### after that run 
+> pip install -r requirements.txt
 
-> And run the command: 
-#### python manage.py runserver
+#### And run the command: 
+> python manage.py runserver
 
 
 ## Api Documentation 
