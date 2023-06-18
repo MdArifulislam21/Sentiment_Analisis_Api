@@ -11,7 +11,7 @@ tokenizer = AutoTokenizer.from_pretrained(model_name)
 
 
 
-@api_view(['GET', 'POST'])
+@api_view(['POST'])
 def analyze_view(request):
     """
         API view method for sentiment analysis.
@@ -64,5 +64,5 @@ def analyze_view(request):
         except Exception as e:
             return Response({'error': str(e)}, status=500)
     else:
-        return Response({'sentiment': 'Please input your text in content section'}, status=200)
+        return Response({'error': 'Invalid request payload'}, status=405)
 
